@@ -30,17 +30,17 @@ def orderStatus(live, order_id):
     if live:
         # ~~~~~~~~~LIVE~~ACCOUNT~~TRADING~~~~~~~~~~~~
         api_url = 'https://api.gdax.com/'
-        API_KEY = 'fb73318ded0a04b9ab31011147c4624b'
-        API_SECRET = 'g3bBiSYOKTx6iIIzyKD8Ko3ZbDYJXXb10MRgUGp5cbyRsujoQpaGTihpd/uC46u+otsu5rRzJgKzEUvraYrQ7A=='
-        API_PASS = 'vw2rhs8895'
+        API_KEY = ''
+        API_SECRET = ''
+        API_PASS = ''
         auth = CoinbaseExchangeAuth(API_KEY, API_SECRET, API_PASS)
         r = requests.get(api_url+'orders/'+order_id, auth=auth)
         print(json.dumps(r.json(), indent=4, sort_keys=True))
     else:
         api_url = 'https://api-public.sandbox.gdax.com/'
-        key = 'cccb03f901fd214a05dc28db4a84d108'
-        secret = '/Gg077926cm2RstkXcVwBVT18kdpwoK4xVS74Vm/BLkcuv8fZiHU0jyzmoy6eSYgC4hnKwQdtEMHcRpIHyunBQ=='
-        passphrase = 'yhwq4kurmq'
+        key = ''
+        secret = ''
+        passphrase = ''
         auth = CoinbaseExchangeAuth(key, secret, passphrase)
         r = requests.get(api_url + 'orders/'+order_id, auth=auth)
         print(json.dumps(r.json(), indent=4, sort_keys=True))
