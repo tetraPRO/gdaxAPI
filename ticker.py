@@ -31,9 +31,9 @@ class CoinbaseExchangeAuth(AuthBase):
 
 
 api_url = 'https://api.gdax.com/'
-API_KEY = 'fb73318ded0a04b9ab31011147c4624b'
-API_SECRET = 'g3bBiSYOKTx6iIIzyKD8Ko3ZbDYJXXb10MRgUGp5cbyRsujoQpaGTihpd/uC46u+otsu5rRzJgKzEUvraYrQ7A=='
-API_PASS = 'vw2rhs8895'
+API_KEY = ''
+API_SECRET = ''
+API_PASS = ''
 auth = CoinbaseExchangeAuth(API_KEY, API_SECRET, API_PASS)
 
 # Get ticker
